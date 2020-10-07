@@ -1,3 +1,3 @@
-output "sns_arn" {
-    value   = aws_sns_topic.main.0.arn
+output "arn" {
+    value   = aws_cloudformation_stack.main.0.outputs
 }
