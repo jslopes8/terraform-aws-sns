@@ -8,7 +8,7 @@
         "DisplayName" : "${display_name}",
         "Subscription": [
           {
-           "Endpoint" : "${email_address}",
+           "Endpoint" : "${endpoint}",
            "Protocol" : "${protocol}"
           }
         ]
