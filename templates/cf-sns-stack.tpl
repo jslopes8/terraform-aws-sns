@@ -2,7 +2,7 @@
   "AWSTemplateFormatVersion": "2010-09-09",
 
   "Resources" : {
-    "EmailSNSTopic": {
+    "SNSTopic": {
       "Type" : "AWS::SNS::Topic",
       "Properties" : {
         "DisplayName" : "${display_name}",
@@ -18,8 +18,8 @@
 
   "Outputs" : {
     "ARN" : {
-      "Description" : "Email SNS Topic ARN",
-      "Value" : { "Ref" : "EmailSNSTopic" }
+      "Description" : "SNS Topic ARN",
+      "Value" : { "Ref" : "SNSTopic" }
     }
   }
 }
