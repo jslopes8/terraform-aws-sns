@@ -1,4 +1,4 @@
-# AWS EventBrigde Terraform Modules
+# AWS SNS Terraform Modules
 
 O codigo irá prover os seguintes recursos na AWS.
 
