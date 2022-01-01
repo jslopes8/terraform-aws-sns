@@ -102,4 +102,5 @@ module "sns_topic" {
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 | Name | Description |
 | ---- | ----------- |
-| arn | O ARN do SNS topic |
+| sns_arn | O ARN do SNS Topic. |
+| sns_id | O ID do SNS Topic. |
