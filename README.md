@@ -70,9 +70,8 @@ module "sns_topic" {
 | subscription | Um bloco dinamico que prover um ou mais subscription para o SNS Topic. Mais detalhes abaixo. | `no` | `list` | `[ ]` |
 
 #### O argumento `subscription` possui os seguintes atributos;
-```
-Se usar um protocolo parcialmente compatível e a assinatura não for confirmada, seja por confirmação automática ou por meios externos (por exemplo, clicando no link "Confirmar assinatura" em um e-mail), o Terraform não poderá excluir/cancelar a assinatura. A tentativa de destruir uma assinatura não confirmada removerá o recursos do Terraform state, mas não removerá da AWS.
-```
+>Se usar um protocolo parcialmente compatível e a assinatura não for confirmada, seja por confirmação automática ou por meios externos (por exemplo, clicando no link "Confirmar assinatura" em um e-mail), o Terraform não poderá excluir/cancelar a assinatura. A tentativa de destruir uma assinatura não confirmada removerá o recursos do Terraform state, mas não removerá da AWS.<br>
+
 **Protocolos parcialmente compatíveis:**<br>
 **email** - Entrega de mensagens via SMTP. Um endereço de e-mail.<br>
 **email-json** - Entrega de mensagens codificadas em JSON via SMTP. Um endereço de e-mail.<br>
@@ -84,9 +83,8 @@ Se usar um protocolo parcialmente compatível e a assinatura não for confirmada
 - `endpoint` - (Obrigatorio) Endpoint para o qual enviar dados. O conteúdo varia de acordo com o protocolo.
 
 #### O argumento `access_policy` possui os seguintes atributos;<br>
-```
-Se um Principal for especificado apenas como um ID de conta AWS em vez de um ARN, a AWS silenciosamente o converte em ARN para o usuário root. por exemplo `arn:aws:iam::123456789000:root`
-```
+>Se um Principal for especificado apenas como um ID de conta AWS em vez de um ARN, a AWS silenciosamente o converte em ARN para o usuário root. por exemplo `arn:aws:iam::123456789000:root`
+
 - `sid` (opcional) -  Inclua informação para diferenciar entre suas instruções.
 - `effect` - Use `Allow` ou `Deny` para indicar se a política permite ou nega acesso.
 - `principals` (Obrigatorio para este template) - Se você criar uma política baseada em recurso, deverá indicar a conta, o usuário, a função ou o usuário federado ao qual deseja permitir ou negar acesso.
